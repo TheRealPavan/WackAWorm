@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getApplicationContext(), "I was touched, oh god call the police", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), Level1.class);
+                startActivity(intent);
                 return true;
             }
         });
